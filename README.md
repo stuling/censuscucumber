@@ -21,3 +21,4 @@ For example, the address "123 1st Ave.  " would be stripped down to
 | JDK          | jdk-11.0.14.101-hotspot                |
 | Build System | Maven project                          |
 | Unit Tests   | JUnit 5                                |
+| Cucumber     | 7.8.1                                  |
