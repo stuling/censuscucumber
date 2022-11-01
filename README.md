@@ -10,7 +10,7 @@ A repo to demonstrate unit tests on a simple Address class using the Cucumber fr
 For example, the address "123 1st Ave.  " would be stripped down to
 > "123 1st ave"
 
-2. Yes, this is contrived and lousy in the real world
+2. Yes, this is contrived and a lousy idea in the real world
 
 
 ### Technical Details:
