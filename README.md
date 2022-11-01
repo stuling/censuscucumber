@@ -1,12 +1,5 @@
 [![Java CI with Maven](https://github.com/stuling/censuscucumber/actions/workflows/maven.yml/badge.svg)](https://github.com/stuling/censuscucumber/actions/workflows/maven.yml)
 
-#### Test Results
-4 tests   4 [:heavy_check_mark:](https://github.com/EnricoMi/publish-unit-test-result-action/blob/v1.20/README.md#the-symbols "passed tests")  0s [:stopwatch:](https://github.com/EnricoMi/publish-unit-test-result-action/blob/v1.20/README.md#the-symbols "duration of all tests")  
-1 suites  0 [:zzz:](https://github.com/EnricoMi/publish-unit-test-result-action/blob/v1.20/README.md#the-symbols "skipped / disabled tests")  
-1 files    0 [:x:](https://github.com/EnricoMi/publish-unit-test-result-action/blob/v1.20/README.md#the-symbols "failed tests")
-
-Results for commit 1e56faae.
-
 ### Description:
 A repo to demonstrate unit tests on a simple Address class using the Cucumber framework and JUnit
 
