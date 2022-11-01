@@ -1,3 +1,5 @@
+[![JUnit tests with Maven](https://github.com/stuling/censuscucumber/actions/workflows/maven.yml/badge.svg)](https://github.com/stuling/censuscucumber/actions/workflows/maven.yml)
+
 ### Description:
 A repo to demonstrate unit tests on a simple Address class using the Cucumber framework and JUnit
 
