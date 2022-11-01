@@ -31,14 +31,13 @@ jobs:
     - name: Run tests with Maven
       run: mvn -B test --file pom.xml
 
-    - name: Publish Test Results
-      uses: EnricoMi/publish-unit-test-result-action/composite@v2
-      if: always()
-      with:
-        junit_files: "**/surefire-reports/TEST-*.xml"
-
-    - name: Conclusion
-      run: echo "Conclusion is ${{ fromJSON( steps.test-results.outputs.json ).conclusion }}"
+  - name: Publish Test Results
+    uses: dorny/test-reporter@v1
+    if: success() || failure()    # run this step even if previous step failed
+    with:
+      name: JUnit Tests           # Name of the check run which will be created
+      path: '**/surefire-reports/TEST-*.xml'    # Path to test results
+      reporter: java-junit        # Format of test results
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
