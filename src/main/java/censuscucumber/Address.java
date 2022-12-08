@@ -9,7 +9,7 @@ public class Address {
 
     /**
      * Attempt to maximize matching by cleaning up
-     * messy address input
+     * messy address input including a .trim()
      * @param value A string (address) to sanitize
      * @return A sanitized string
      */
@@ -19,8 +19,9 @@ public class Address {
 
     public Address (String street, String city, String state) {
         this.street = street;
-        this.cleanStreet = cleanupStreet(street);
-        this.city = city;
+        //an extra regex here to cleanup extra spaces in between words, which was a bug
+        this.cleanStreet = cleanupStreet(street).replaceAll("\\s+", " ");
+        this.city = city.trim();
         this.state = state.trim();
     }
 
