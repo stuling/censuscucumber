@@ -18,7 +18,6 @@ For example, the address "123 1st Ave.  " would be stripped down to
 ### Technical Details:
 | Tool         | Details                                |
 |--------------|----------------------------------------|
-| IDE          | IntelliJ IDEA Community Edition 2022.1 |
 | Language     | Java                                   |
 | JDK          | jdk-11.0.14.101-hotspot                |
 | Build System | Maven project                          |
